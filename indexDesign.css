@@ -1,0 +1,48 @@
+h1 + #tvTuner{
+float:right;
+border:1px solid black;    
+}
+h1 {
+  text-align:center;  
+}
+h2 {
+    text-align:center;
+}
+h2 + ol > li {
+    font-weight:bold;
+    margin:0px;
+    padding:0px;
+}
+article {
+    border: 1px solid black;
+    position:relative;
+}
+article > * {
+    padding-left:4px;
+}
+#rasterLines {
+    float:right;
+}
+#pixels {
+    float:left;
+}
+h3 {
+clear: both;
+}
+#pixels + p {
+    text-align:center;
+}
+#tvTuner + br + p {
+    text-align:right;
+}
+a {
+text-decoration: none;
+}
+footer {
+    width:50vw;
+    position:absolute;
+    left:25vw;
+}
+footer > p {
+    text-align:center;
+}
