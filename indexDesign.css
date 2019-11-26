@@ -1,3 +1,6 @@
+* {
+    font-family:Calibri;
+}
 h1 + #tvTuner{
 float:right;
 border:1px solid black;    
@@ -7,12 +10,22 @@ h1 {
 }
 h2 {
     text-align:center;
+    visibility:hidden;
 }
-h2 + ol > li {
+ #wrapper > a > p {
     font-weight:bold;
     margin:0px;
     padding:0px;
-}
+    display:inline;
+ }
+ #wrapper {
+     text-align:center;
+     position:absolute;
+     left:auto;
+     right:auto;
+     border:1px solid black;
+     visibility:hidden;
+ }
 article {
     border: 1px solid black;
     position:relative;
@@ -43,6 +56,34 @@ footer {
     position:absolute;
     left:25vw;
 }
-footer > p {
-    text-align:center;
+#menu:hover {
+    cursor:pointer;
+}
+#menu {
+}
+#phonewrapper  {
+    visibility:hidden;
+    position:absolute;
+}
+@media only screen and (min-width: 580px) {
+    h2 {
+        text-align:left;
+    }
+    #menu {
+        visibility:hidden;
+    }
+    article {
+        margin-top:9px;
+    }
+@media only screen and (min-width: 363px) {
+h2 {
+   text-align:left;
+   visibility:visible;
+   }
+ #menu {
+  visibility:hidden;
+ }
+ #wrapper {
+     visibility:visible;
+ }
 }
