@@ -4,7 +4,7 @@
 }
 #title {
     font-size: 2vmin;
-    padding: 0px, 2rem, 0px, 2rem;
+    padding: 0px 2rem 0px 2rem;
     background-color:blue;
     margin: -2px 0px 20px -10px;
     width:100vw;
@@ -51,6 +51,7 @@ h1 {
 #pixels {
     float:left;
 }
+
 h3 {
 padding:10px 0px 5px 0px;
 clear: both;
@@ -80,6 +81,15 @@ footer {
 img + p {
     font-weight:bold;
 }
+#pixels + #vswrapper > p {
+    font-size:1rem;
+    padding: 0px 10px 0px 0px; 
+    text-align:center;
+    font-weight:bold;
+}
+strong {
+    clear:both;
+}
 @media only screen and (min-width: 580px) {
     #indice {
         text-align:left;
@@ -89,6 +99,9 @@ img + p {
      }
 }
 @media only screen and (min-width: 363px) {
+#pixels + #vswrapper {
+    padding: 0px 25px 0px 25px;
+    }
 #indice {
    visibility:visible;
    }
@@ -105,9 +118,6 @@ img + p {
  }
 #tvTunerMenu {
   width:363px;  
-}
-#pixels + p {
-    text-align:center;
 }
 }
 @media only screen and (max-width: 580px) {
