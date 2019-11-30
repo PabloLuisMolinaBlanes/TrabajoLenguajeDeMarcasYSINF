@@ -1,15 +1,30 @@
 * {
     font-family:Calibri;
+    box-sizing:border-box;  
 }
-h1 + #tvTuner{
-float:right;
-border:1px solid black;    
+#title {
+    font-size: 2vmin;
+    padding: 0px, 2rem, 0px, 2rem;
+    background-color:blue;
+    margin: -2px 0px 20px -10px;
+    width:100vw;
+}
+body {
+    background-color:grey;
+}
+article {
+    background-color:white;
+    position:relative;
+    width:98.8vw;
+    margin: 0px 0px 0px -7px; 
+}
+article > * {
+    padding: 0px 0px 0px 2px;
 }
 h1 {
   text-align:center;  
 }
-h2 {
-    text-align:center;
+#indice {
     visibility:hidden;
 }
  #wrapper > a > p {
@@ -17,6 +32,9 @@ h2 {
     margin:0px;
     padding:0px;
     display:inline;
+ }
+ #text-decorationOfa > ul > li > a {
+     text-decoration:underline;
  }
  #wrapper {
      text-align:center;
@@ -26,64 +44,81 @@ h2 {
      border:1px solid black;
      visibility:hidden;
  }
-article {
-    border: 1px solid black;
-    position:relative;
-}
-article > * {
-    padding-left:4px;
-}
 #rasterLines {
     float:right;
 }
+
 #pixels {
     float:left;
 }
 h3 {
+padding:10px 0px 5px 0px;
 clear: both;
 }
-#pixels + p {
-    text-align:center;
-}
-#tvTuner + br + p {
-    text-align:right;
-}
 a {
-text-decoration: none;
+text-decoration:none;    
 }
 footer {
-    width:50vw;
-    position:absolute;
-    left:25vw;
+    width:100vw;
+    text-align:center;
+    margin:-15px 0px -13px -10px;
 }
 #menu:hover {
     cursor:pointer;
 }
 #menu {
+    width:25px;
+    position:initial;
 }
 #phonewrapper  {
     visibility:hidden;
     position:absolute;
 }
+#tvTunerMenu {
+    width:calc(100vw - 2.4em);
+}
+img + p {
+    font-weight:bold;
+}
 @media only screen and (min-width: 580px) {
-    h2 {
+    #indice {
         text-align:left;
     }
-    #menu {
-        visibility:hidden;
-    }
-    article {
-        margin-top:9px;
-    }
+    a > p {
+        width:18%;
+     }
+}
 @media only screen and (min-width: 363px) {
-h2 {
-   text-align:left;
+#indice {
    visibility:visible;
    }
  #menu {
   visibility:hidden;
+  position:absolute;
  }
  #wrapper {
      visibility:visible;
+     background-color:#F06209;
  }
+ #title {
+     margin: -16px 0px 20px -10px;
+ }
+#tvTunerMenu {
+  width:100px;  
+}
+#pixels + p {
+    text-align:center;
+}
+}
+@media only screen and (max-width: 580px) {
+    article {
+        width:96vw;   
+    }
+}
+@media only screen and (max-width: 363px) {
+    article {
+        margin: -120px 0px 20px -10px;
+        font-size:calc(1em - 6px);
+        width:95vw;
+    }
 }
