@@ -6,7 +6,7 @@ function showMenu() {
         document.getElementById("phonewrapper").style.visibility="visible";
         document.getElementById("phonewrapper").style.position="initial";
         document.getElementById("phonewrapper").style.border="1px solid black";
-        document.getElementById("phonewrapper").style.backgroundColor="#F06209";
+        document.getElementById("phonewrapper").style.backgroundColor="hsl(200,100%,50%)";
         document.getElementById("phonewrapper").style.fontStyle="bold";
     }
 }

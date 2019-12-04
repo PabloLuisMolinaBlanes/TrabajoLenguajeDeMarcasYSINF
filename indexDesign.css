@@ -1,5 +1,5 @@
 * {
-    font-family:Calibri;
+    font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Lato','Helvetica','Arial',sans-serif;/*font-family:Calibri;*/
     box-sizing:border-box;  
 }
 #title {
@@ -12,14 +12,31 @@
 body {
     background-color:grey;
 }
+#libro {
+    text-align:center;
+}
 article {
     background-color:white;
     position:relative;
-    width:98.8vw;
+    width:96vw;
     margin: 0px 0px 0px -7px; 
+    box-shadow:1px 1px 5px 0px;
+    background-color:hsl(200,100%,50%);
+}
+#titArtic {
+    border-bottom:2px solid blue;
+    border-top:2px solid blue;
+    border-bottom-style:dashed;
+    border-top-style:dashed;
+}
+section {
+    background-color:hsl(200,100%,50%);
+    border-bottom:2px solid blue;
+    border-bottom-style:dashed;
+    margin: -19px 0px 0px 0px;
 }
 article > * {
-    padding: 0px 0px 0px 2px;
+    padding: 0px 0px 0px 10px;
 }
 h1 {
   text-align:center;  
@@ -75,7 +92,7 @@ footer {
     visibility:hidden;
     position:absolute;
 }
-#tvTunerMenu {
+.tvTunerMenu {
     width:calc(100vw - 2.4em);
 }
 img + p {
@@ -111,24 +128,24 @@ strong {
  }
  #wrapper {
      visibility:visible;
-     background-color:#F06209;
+     background-color:hsl(200,100%,50%);;
  }
  #title {
      margin: -16px 0px 20px -10px;
  }
-#tvTunerMenu {
+.tvTunerMenu {
   width:363px;  
 }
 }
 @media only screen and (max-width: 580px) {
     article {
-        width:96vw;   
+        width:95vw;   
     }
 }
 @media only screen and (max-width: 363px) {
     article {
         margin: -120px 0px 20px -10px;
-        font-size:calc(1em - 6px);
+        font-size:calc(1.5em - 6px);
         width:95vw;
     }
 }
